@@ -10,3 +10,10 @@ Open Browser To Login Page
     
     Create Webdriver    Chrome    options=${chrome_options}
     Go To    https://computing.kku.ac.th
+
+*** Test Cases ***
+TC01_Open_Home_Page_Success
+    [Documentation]    ทดสอบการเปิดหน้าเว็บและเช็ค Title ของ Tab
+    Open Browser To Login Page
+    Title Should Contain    Computing
+    [Teardown]    Close Browser
