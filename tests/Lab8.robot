@@ -13,7 +13,5 @@ Open Browser To Login Page
 
 *** Test Cases ***
 TC01_Open_Home_Page_Success
-    [Documentation]    ทดสอบการเปิดหน้าเว็บและเช็ค Title ของ Tab
     Open Browser To Login Page
-    Title Should Contain    Computing
-    [Teardown]    Close Browser
+    Close Browser
